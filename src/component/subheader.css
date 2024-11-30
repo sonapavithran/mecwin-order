@@ -1,0 +1,78 @@
+.subheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(35, 35, 192);
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 20px;
+  }
+  
+  .toggle-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .toggle-button {
+    background-color: rgb(35, 35, 192);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Search Container */
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+  
+  .search-bar {
+    padding: 3px 8px 3px 30px; /* Reduce padding for a smaller size */
+    font-size: 0.9rem; /* Decrease font size */
+    border: 1px solid black; /* Make the border black */
+    border-radius: 4px; /* Adjust border radius */
+    width: 100%; /* Full width of the container */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+  }
+  
+  .search-bar::placeholder {
+    color: #888; /* Optional: Change placeholder color */
+    font-style: normal; /* Optional: Add a different style for placeholder */
+  }
+  
+  /* Search Icon */
+  .search-icon {
+    position: absolute;
+    left: 8px; /* Place the icon on the left */
+    font-size: 0.9rem;
+    color: #888; /* Adjust color to match your design */
+    pointer-events: none; /* Prevent clicking the icon */
+    
+  }
+  
+  .performance-button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: 1px solid black; /* Make the border black */
+    padding: 5px 10px; /* Reduce the padding for smaller size */
+    font-size: 0.9rem; /* Decrease font size */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .performance-button:hover {
+    background-color: #27ae60;
+  }
+  

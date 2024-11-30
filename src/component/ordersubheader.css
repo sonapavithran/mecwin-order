@@ -1,0 +1,57 @@
+/* Order Subheader Styles */
+.order-subheader {
+    display: flex;
+    justify-content: space-between; /* Push content to the ends */
+    align-items: center; /* Align items vertically in the center */
+    padding: 5px 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+  }
+  
+  .order-info {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .assign-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Add spacing between elements */
+  }
+  
+  .assign-label {
+    font-size: 0.9rem;
+  }
+  
+  .dropdown {
+    padding: 3px 8px; 
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .edit-order-button {
+    display: flex;
+    align-items: center; /* Align text and icon */
+    gap: 5px; /* Space between icon and text */
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid black; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-order-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-icon {
+    font-size: 0.9rem; /* Icon size */
+    color: #fff; /* Icon color */
+  }
+  

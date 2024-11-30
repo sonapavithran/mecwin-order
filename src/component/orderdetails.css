@@ -1,0 +1,120 @@
+/* Order Details Container */
+.order-details {
+    margin: 20px 2px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .order-summary {
+    margin-bottom: 20px;
+    margin-left: 3%;
+  }
+  
+  .order-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Table Container */
+  .responsive-table {
+    overflow-x: auto;
+    max-width: 90%;
+    white-space: nowrap;
+    padding: 10px;
+    margin: 0 auto;
+    /* width: fixed;
+    height:fixed;
+    margin-top: 20px;
+    margin-left: 50px; */
+  }
+  
+  .responsive-table::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  table {
+    width: 100%; /* Use full width of the container */
+    table-layout: fixed; /* Fix table layout */
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  thead th {
+    background-color: #f4f4f4;
+    text-align: left;
+    padding: 12px;
+    font-size: 0.9rem;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+  } 
+  
+  tbody td {
+    padding: 12px;
+    font-size: 0.9rem;
+    text-align: left;
+    border: 1px solid #ddd;
+    position: relative; /* For pencil icon alignment */
+    overflow: hidden; /* Prevent overflow */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 30px;
+   
+   
+  }
+  
+  /* Blank Cell (Before Editing) */
+  .blank-cell {
+    background-color: #e0e0e0; /* Default grey background */
+    color: transparent; /* Hide placeholder-like text */
+    border: 1px solid #ddd;
+    width: fixed;
+    height: fixed;
+    
+  }
+  
+  /* Editable Cell Content */
+  .editable-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%; /* Ensure content fills the cell height */
+    
+   
+  }
+  
+  /* Pencil Icon */
+  .cell-pencil-icon {
+    font-size: 0.5rem;
+    color: #007bff;
+    cursor: pointer;
+    position: absolute; /* Position it relative to the cell */
+    bottom: 5px; /* Adjust distance from the bottom edge */
+    right: 5px; /* Adjust distance from the right edge */
+    transition: color 0.2s ease-in-out;
+}
+
+.cell-pencil-icon:hover {
+    color: #0056b3;
+}
+
+  
+  /* Input Field Styling */
+  table input {
+    width: 100%; /* Match cell width */
+    box-sizing: border-box; /* Include padding in width */
+    padding: 5px;
+    border: none; /* Remove border for consistency */
+    background-color: transparent; /* Transparent background */
+    color: #000; /* Default text color */
+    font-size: 0.9rem; /* Match table font size */
+    outline: none; /* Remove focus outline */
+  }
+  
+  table input:disabled {
+    background-color: transparent; /* Ensure disabled input is seamless */
+    cursor: not-allowed;
+    border: none;
+  }
+  
